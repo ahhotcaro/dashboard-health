@@ -1,0 +1,655 @@
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dashboard {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+
+  background: #fffcf8;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.06);
+  border-radius: 40px;
+
+  /* margin: 50px; */
+}
+
+/* ******************************************* Navigation *************************************** */
+.nav {
+  position: absolute;
+  width: 101px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 40px 12px 12px 40px;
+}
+
+.logo {
+  position: absolute;
+  width: 63px;
+  height: 48px;
+  left: 19px;
+  top: 57px;
+}
+
+.menuIcon1,
+.menuIcon2,
+.menuIcon3,
+.menuIcon4,
+.menuIcon5,
+.menuIcon6 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.menuIcon1 {
+  left: 21px;
+  top: 169px;
+}
+
+.menuIcon2 {
+  left: 21px;
+  top: 259px;
+}
+
+.menuIcon3 {
+  left: 21px;
+  top: 349px;
+}
+
+.menuIcon4 {
+  left: 21px;
+  top: 439px;
+}
+
+.menuIcon5 {
+  left: 21px;
+  top: 529px;
+}
+
+.menuIcon6 {
+  left: 21px;
+  top: 619px;
+}
+
+/* ********************************************* Center Frame ****************************************** */
+.title {
+  position: absolute;
+  width: 371px;
+  height: 35px;
+  left: 141px;
+  top: 37px;
+
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+
+  color: #303030;
+}
+
+.date {
+  position: absolute;
+  width: 135px;
+  height: 20px;
+  left: 141px;
+  top: 80px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #6a6969;
+}
+
+.headerButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  left: 718px;
+  top: 52px;
+}
+
+.research,
+.notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 14px;
+
+  position: static;
+  width: 52px;
+  height: 44px;
+  top: 0px;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.research {
+  left: 0px;
+  margin-right: 20px;
+}
+
+.notifications {
+  left: 32px;
+}
+
+.foodSuggestions,
+.sleepQuality,
+.timeToBed {
+  position: absolute;
+  width: 213px;
+  height: 262px;
+  top: 146px;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.foodIcon,
+.sleepIcon,
+.timeIcon,
+.activityIcon,
+.tipsIcon {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 16px;
+  top: 19px;
+}
+
+.foodTitle,
+.sleepTitle,
+.timeTitle,
+.activityTitle,
+.tipsTitle {
+  position: absolute;
+  height: 40px;
+  left: 94px;
+
+  font-family: "Mulish", sans-serif;
+  font-size: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.sleepTitle,
+.timeTitle,
+.activityTitle,
+.tipsTitle {
+  top: 23px;
+  width: 153px;
+}
+
+.foodTitle {
+  top: 16px;
+  width: 113px;
+}
+
+.activityGrowth {
+  position: absolute;
+  width: 699px;
+  height: 412px;
+  left: 153px;
+  top: 447px;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+/* *********************************** Food Suggestions ********************************* */
+.foodSuggestions {
+  left: 141px;
+}
+
+.food {
+  position: absolute;
+  width: 150px;
+  height: 129.75px;
+  left: 32px;
+  top: 103px;
+}
+
+/* **************************************** Sleep Quality & Time to bed ************************************* */
+.sleepQuality {
+  left: 384px;
+}
+
+.timeToBed {
+  left: 627px;
+}
+
+.data {
+  position: absolute;
+  width: 69px;
+  height: 40px;
+  left: 20px;
+  top: 60px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+
+  color: #272927;
+}
+
+.sleepAverage,
+.timeAverage {
+  position: absolute;
+  width: 64px;
+  height: 20px;
+  top: 92px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #818181;
+}
+
+.sleepAverage {
+  left: 95px;
+}
+
+.timeAverage {
+  left: 111px;
+}
+
+.sleepFromLastWeek,
+.timeFromLastWeek {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4px 8px;
+
+  position: absolute;
+  width: 118px;
+  height: 23px;
+  left: 20px;
+  top: 146px;
+
+  border-radius: 4px;
+}
+
+.sleepFromLastWeek {
+  background: rgba(177, 95, 242, 0.22);
+}
+
+.timeFromLastWeek {
+  background: rgba(71, 143, 150, 0.33);
+}
+
+.subtitle {
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+/* ***************************************** Tips and Motivation ******************************* */
+.tipsAndMotivation {
+  position: absolute;
+  width: 699px;
+  height: 98px;
+  left: 152px;
+  top: 900px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+
+  position: absolute;
+  width: 55px;
+  height: 26px;
+  left: 268px;
+
+  background: rgba(237, 203, 77, 0.36);
+  border-radius: 8px;
+}
+
+.themeName {
+  position: static;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #383838;
+}
+
+/* ********************************************* Right Frame ************************************ */
+
+.rightFrame {
+  position: absolute;
+  width: 560px;
+  height: 1024px;
+  left: 880px;
+  top: 0px;
+
+  background: #303030;
+  border: 1px solid #f1f1f1;
+  border-radius: 40px;
+}
+
+.dietIcon {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 40px;
+  top: 33px;
+}
+
+.dietTitle {
+  position: absolute;
+  width: 174px;
+  height: 28px;
+  left: 118px;
+  top: 35px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.textLine1,
+.textLine2,
+.textLine3,
+.textLine4 {
+  position: absolute;
+  width: 76px;
+  height: 0px;
+  left: 185px;
+
+  border: 1px solid #ffffff;
+}
+
+.textLine1 {
+  top: 150px;
+}
+
+.textLine2 {
+  top: 214px;
+}
+
+.textLine3 {
+  top: 276px;
+}
+
+.textLine4 {
+  top: 334px;
+}
+
+.unity1,
+.unity2,
+.unity3,
+.unity4 {
+  position: absolute;
+  width: 42px;
+  height: 18px;
+  left: 270px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+.unity1 {
+  top: 122px;
+}
+
+.unity2 {
+  top: 186px;
+}
+
+.unity3 {
+  top: 248px;
+}
+
+.unity4 {
+  top: 304px;
+}
+
+.meal {
+  position: absolute;
+  width: 175px;
+  height: 23px;
+  left: 356px;
+  top: 100px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.kcal {
+  position: absolute;
+  width: 105px;
+  height: 25px;
+  left: 391px;
+  top: 210px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.sectionLine {
+  position: absolute;
+  width: 500px;
+  height: 0px;
+  left: 30px;
+  top: 377px;
+
+  border: 1px solid #4f4e4e;
+}
+
+.BMICalculator {
+  position: absolute;
+  width: 149px;
+  height: 28px;
+  left: 40px;
+  top: 416px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.dateCheck {
+  position: absolute;
+  width: 188px;
+  height: 20px;
+  left: 40px;
+  top: 465px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #cacaca;
+}
+
+.height {
+  position: absolute;
+  width: 187px;
+  height: 82px;
+  left: 40px;
+  top: 588px;
+
+  background: #f8debd;
+  border-radius: 12px;
+}
+
+.weight {
+  position: absolute;
+  width: 187px;
+  height: 82px;
+  left: 40px;
+  top: 685px;
+
+  background: #d0fbff;
+  border-radius: 12px;
+}
+
+.heightTitle,
+.weightTitle {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 20px;
+  top: 22px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #272927;
+}
+
+.BMI {
+  position: absolute;
+  width: 283px;
+  height: 184px;
+  left: 40px;
+  top: 797px;
+
+  background: #4a4949;
+  border-radius: 12px;
+}
+
+.BMITitle {
+  position: absolute;
+  width: 169px;
+  height: 20px;
+  left: 20px;
+  top: 10px;
+
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.healthState {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 10px;
+
+  position: absolute;
+  width: 101px;
+  height: 20px;
+  left: 141px;
+  top: 62px;
+
+  background: #d6ffdd;
+  border-radius: 8px;
+}
+
+.BMIscale {
+  position: absolute;
+  width: 246px;
+  height: 49px;
+  left: 20px;
+  top: 118px;
+}
+
+.manBody {
+  position: absolute;
+  width: 199px;
+  height: 557.03px;
+  left: 324px;
+  top: 434px;
+}
