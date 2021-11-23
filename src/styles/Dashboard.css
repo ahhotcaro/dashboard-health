@@ -272,11 +272,13 @@
 }
 
 .sleepAverage,
-.timeAverage {
+.timeAverage,
+.sleepAverage {
   position: absolute;
   width: 64px;
   height: 20px;
   top: 92px;
+  left: 95px;
 
   font-family: Mulish, sans-serif;
   font-style: normal;
@@ -285,14 +287,6 @@
   line-height: 20px;
 
   color: #818181;
-}
-
-.sleepAverage {
-  left: 95px;
-}
-
-.timeAverage {
-  left: 111px;
 }
 
 .sleepFromLastWeek,
@@ -363,7 +357,7 @@
 
   position: absolute;
   width: 55px;
-  height: 26px;
+  height: 23px;
   left: 268px;
 
   background: rgba(237, 203, 77, 0.36);
@@ -529,7 +523,7 @@
   width: 149px;
   height: 28px;
   left: 40px;
-  top: 416px;
+  top: 18px;
 
   font-family: Mulish, sans-serif;
   font-style: normal;
@@ -545,7 +539,7 @@
   width: 188px;
   height: 20px;
   left: 40px;
-  top: 465px;
+  top: 54px;
 
   font-family: Mulish, sans-serif;
   font-style: normal;
@@ -561,7 +555,7 @@
   width: 187px;
   height: 82px;
   left: 40px;
-  top: 588px;
+  top: 190px;
 
   background: #f8debd;
   border-radius: 12px;
@@ -572,7 +566,7 @@
   width: 187px;
   height: 82px;
   left: 40px;
-  top: 685px;
+  top: 290px;
 
   background: #d0fbff;
   border-radius: 12px;
@@ -600,7 +594,7 @@
   width: 283px;
   height: 184px;
   left: 40px;
-  top: 797px;
+  top: 410px;
 
   background: #4a4949;
   border-radius: 12px;
@@ -651,5 +645,133 @@
   width: 199px;
   height: 557.03px;
   left: 324px;
-  top: 434px;
+  top: 40px;
+}
+
+@media only screen and (max-width: 1197px) {
+  .dashboard {
+    position: relative;
+    width: 1197px;
+    height: 1170px;
+  }
+  .nav {
+    position: absolute;
+    height: 1170px;
+  }
+
+  .rightFrame {
+    position: absolute;
+    width: 560px;
+    height: 1170px;
+  }
+
+  .timeToBed {
+    left: 141px;
+    top: 435px;
+  }
+
+  .headerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 124px;
+    height: 44px;
+    left: 531px;
+    top: 37px;
+  }
+
+  .research {
+    margin-bottom: 10px;
+  }
+
+  .rightFrame {
+    left: 637px;
+  }
+
+  .tipsAndMotivation {
+    position: absolute;
+    width: 213px;
+    height: 262px;
+    left: 384px;
+    top: 435px;
+  }
+
+  .tipsTitle {
+    width: 106px;
+    top: 16px;
+  }
+
+  .activityGrowth {
+    width: 456px;
+    height: 412px;
+    left: 141px;
+    top: 723px;
+  }
+
+  .theme {
+    left: 79px;
+    top: 102px;
+  }
+
+  .sectionLine {
+    top: 470px;
+  }
+
+  .textLine1 {
+    top: 166px;
+  }
+
+  .textLine2 {
+    top: 243px;
+  }
+
+  .textLine3 {
+    top: 321px;
+  }
+
+  .textLine4 {
+    top: 399px;
+  }
+
+  .unity1 {
+    top: 136px;
+  }
+
+  .unity2 {
+    top: 215px;
+  }
+
+  .unity3 {
+    top: 291px;
+  }
+
+  .unity4 {
+    top: 370px;
+  }
+
+  .meal {
+    top: 159px;
+  }
+
+  .kcal {
+    top: 275px;
+  }
+
+  .height {
+    top: 250px;
+  }
+
+  .weight {
+    top: 350px;
+  }
+
+  .BMI {
+    top: 470px;
+  }
+}
+
+@media only screen and (max-width: 1197px) {
 }

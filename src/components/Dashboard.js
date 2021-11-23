@@ -65,7 +65,7 @@ function Dashboard() {
 				<div className='timeToBed'>
 					<img src={timeIcon} alt='time icon' className='timeIcon'/>
 					<h3 className='timeTitle'>Time to Bed</h3>
-					<p className='data'>11pm</p>
+					<p className='data'>7:05</p>
 					<p className='timeAverage'>Average</p>
 					<div className='timeFromLastWeek'>
 						<p className='subtitle'>From last week</p>
@@ -105,7 +105,7 @@ function Dashboard() {
 				<div className='textLine4'></div><p className='unity4'>grams</p>
 				<p className='meal'>Your meal represents</p>
 				<p className='kcal'>Kilocalories</p>
-				<div className='sectionLine'></div>
+				<div className='sectionLine'>
 				<h3 className='BMICalculator'>BMI Calculator</h3>
 				<p className='dateCheck'>Last checked 2 days ago</p>
 				<div className='height'>
@@ -120,6 +120,7 @@ function Dashboard() {
 					<img src={BMIscale} alt='BMI scale' className='BMIscale' />
 				</div>
 				<img src={manBody} alt='man body' className='manBody' />
+				</div>
 			</div>
 			
 		</div>
