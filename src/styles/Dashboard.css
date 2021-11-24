@@ -131,42 +131,6 @@
   color: #6a6969;
 }
 
-/* .headerButton {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: absolute;
-  width: 124px;
-  height: 44px;
-  left: 718px;
-  top: 52px;
-} */
-
-/* .research,
-.notifications {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px 14px;
-
-  position: static;
-  width: 52px;
-  height: 44px;
-  top: 0px;
-
-  background: #ffffff;
-  border: 1px solid #e8e7e7;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.02);
-  border-radius: 12px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-} */
-
 .research,
 .notifications {
   display: flex;
