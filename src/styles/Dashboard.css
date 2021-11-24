@@ -3,20 +3,14 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
+
+  position: relative;
 }
 
 .dashboard {
   position: relative;
   width: 1440px;
   height: 1024px;
-
-  background: #fffcf8;
-  border: 1px solid #e8e7e7;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.06);
-  border-radius: 40px;
-
-  /* margin: 50px; */
 }
 
 /* ******************************************* Navigation *************************************** */
@@ -47,7 +41,8 @@
 .menuIcon3,
 .menuIcon4,
 .menuIcon5,
-.menuIcon6 {
+.menuIcon6,
+.menuIcon7 {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -83,7 +78,27 @@
   top: 619px;
 }
 
+.menuIcon7 {
+  left: 21px;
+  top: 619px;
+  display: none;
+}
+
 /* ********************************************* Center Frame ****************************************** */
+.centerFrame {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  top: 0px;
+  left: 0px;
+
+  background: #fffcf8;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.06);
+  border-radius: 40px;
+}
+
 .title {
   position: absolute;
   width: 371px;
@@ -116,7 +131,7 @@
   color: #6a6969;
 }
 
-.headerButton {
+/* .headerButton {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -127,9 +142,9 @@
   height: 44px;
   left: 718px;
   top: 52px;
-}
+} */
 
-.research,
+/* .research,
 .notifications {
   display: flex;
   flex-direction: row;
@@ -150,15 +165,33 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+} */
+
+.research,
+.notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 14px;
+
+  position: absolute;
+  width: 52px;
+  height: 44px;
+  top: 52px;
+
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
 }
 
 .research {
-  left: 0px;
-  margin-right: 20px;
+  left: 718px;
 }
 
 .notifications {
-  left: 32px;
+  left: 790px;
 }
 
 .foodSuggestions,
@@ -651,16 +684,27 @@
 @media only screen and (max-width: 1197px) {
   .dashboard {
     position: relative;
+  }
+
+  .research {
+    left: 531px;
+    top: 37px;
+  }
+
+  .notifications {
+    left: 531px;
+    top: 90px;
+  }
+
+  .centerFrame {
     width: 1197px;
     height: 1170px;
   }
   .nav {
-    position: absolute;
     height: 1170px;
   }
 
   .rightFrame {
-    position: absolute;
     width: 560px;
     height: 1170px;
   }
@@ -676,15 +720,10 @@
     align-items: flex-start;
     padding: 0px;
 
-    position: absolute;
     width: 124px;
     height: 44px;
     left: 531px;
     top: 37px;
-  }
-
-  .research {
-    margin-bottom: 10px;
   }
 
   .rightFrame {
@@ -692,7 +731,6 @@
   }
 
   .tipsAndMotivation {
-    position: absolute;
     width: 213px;
     height: 262px;
     left: 384px;
@@ -773,5 +811,144 @@
   }
 }
 
-@media only screen and (max-width: 1197px) {
+@media only screen and (max-width: 557px) {
+  .body {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    align-items: center;
+    background: #fffcf8;
+  }
+
+  .dashboard {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+  }
+
+  .centerFrame {
+    position: absolute;
+    width: 557px;
+    height: 2500px;
+
+    border: 0px;
+    box-sizing: border-box;
+    box-shadow: 0px;
+    border-radius: 0px;
+  }
+
+  .rightFrame {
+    position: absolute;
+    width: 557px;
+    height: 1170px;
+    top: 1230px;
+    left: 0px;
+    border-radius: 0px;
+  }
+
+  .nav {
+    position: fixed;
+    width: 101px;
+    height: 557px;
+    transform: rotate(-90deg);
+    left: 230px;
+    top: calc(100% - 330px);
+
+    background: #ffffff;
+    border: 1px solid #e8e7e7;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 0px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuIcon1,
+  .menuIcon2,
+  .menuIcon3,
+  .menuIcon4,
+  .menuIcon5,
+  .menuIcon6,
+  .menuIcon7 {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+
+  .menuIcon1 {
+    top: 238px;
+  }
+
+  .menuIcon2 {
+    top: 158px;
+  }
+
+  .menuIcon3 {
+    top: 84px;
+  }
+
+  .menuIcon4 {
+    top: 318px;
+  }
+
+  .menuIcon5 {
+    top: 391px;
+  }
+
+  .menuIcon6 {
+    top: 465px;
+  }
+
+  .menuIcon7 {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    left: 34px;
+    top: 34px;
+  }
+
+  .research {
+    display: none;
+  }
+
+  .title {
+    left: 51px;
+    top: 80px;
+  }
+
+  .date {
+    left: 51px;
+    top: 123px;
+  }
+
+  .foodSuggestions {
+    left: 51px;
+    top: 169px;
+  }
+
+  .sleepQuality {
+    left: 294px;
+    top: 169px;
+  }
+
+  .notifications {
+    left: 455px;
+    top: 102px;
+  }
+
+  .timeToBed {
+    left: 51px;
+    top: 458px;
+  }
+
+  .tipsAndMotivation {
+    left: 294px;
+    top: 458px;
+  }
+
+  .activityGrowth {
+    left: 51px;
+    top: 746px;
+  }
 }
