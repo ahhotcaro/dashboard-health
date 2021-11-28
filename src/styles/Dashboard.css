@@ -411,43 +411,36 @@
   color: #ffffff;
 }
 
-.textLine1,
-.textLine2,
-.textLine3,
-.textLine4 {
+.textLineWrapper {
   position: absolute;
   width: 76px;
   height: 0px;
-  left: 185px;
-
-  border: 1px solid #ffffff;
-}
-
-.textLine1 {
+  left: 25px;
   top: 150px;
 }
 
-.textLine2 {
-  top: 214px;
+.selectLine {
+  font-family: Mulish, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 100px;
 }
 
-.textLine3 {
-  top: 276px;
+.textLine {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
 }
 
-.textLine4 {
-  top: 334px;
+.inputLine {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  max-width: 100px;
 }
 
-.unity1,
-.unity2,
-.unity3,
-.unity4 {
-  position: absolute;
-  width: 42px;
-  height: 18px;
-  left: 270px;
-
+.unity {
   font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -455,22 +448,6 @@
   line-height: 18px;
 
   color: #ffffff;
-}
-
-.unity1 {
-  top: 122px;
-}
-
-.unity2 {
-  top: 186px;
-}
-
-.unity3 {
-  top: 248px;
-}
-
-.unity4 {
-  top: 304px;
 }
 
 .meal {
