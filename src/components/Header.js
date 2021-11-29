@@ -13,6 +13,7 @@ const currentDate = new Intl.DateTimeFormat("en-US", {
 }).format(date);
 
 export default function Header() {
+    
     return (
         <div className="header">
             
@@ -29,6 +30,6 @@ export default function Header() {
             </div> 
         </div>
  
-    ); //close the return 
+    ); 
   }
   

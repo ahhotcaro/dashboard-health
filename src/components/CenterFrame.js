@@ -3,6 +3,12 @@ import {useEffect, useState} from 'react'
 //import components
 import Header from "./Header";
 import Card from "./Card";
+// Components
+import LineText from "./LineText";
+
+//right frame
+import dietIcon from "../assets/dietIcon.jpg";
+import manBody from "../assets/manBody.jpg";
 
 import foodIcon from "../assets/foodIcon.jpg";
 import food from "../assets/food.jpg";
@@ -51,24 +57,30 @@ export default function CenterFrame() {
         </div>
 
         <div className="widgets">
-          <div className="widget"> {/* widget food suggestion */}
-            {/* for the moment, I keep the classnames but then I will have to do all the CSS */}
-            <Card icone={foodIcon} alt="food icon" titre="Food Suggestions" alternative="food icon"/> 
-            <img src={food} width="100px" alt="food" className="food" />
-          </div>
 
-          {/* widget sleep quality */}
-          <div className="widget">
-            <Card icone={sleepIcon} alternative="sleep icon" titre="Sleep Quality" />
-          </div>
+          <div className="group1">
 
-          {/* widget time in bed */}
-          <div className="widget">
-            <Card icone={timeIcon} alternative="time icon" titre="Time in Bed" />
-            <p className="data">This night, you spent {time2Bed} hours in bed.</p>
-            <p>This week, you spent in average ... hours per night sleeping.</p>
-          </div>
+            {/* widget food suggestion */}
+            <div className="littleWidget"> 
+              {/* for the moment, I keep the classnames but then I will have to do all the CSS */}
+              <Card icone={foodIcon} alt="food icon" titre="Food Suggestions" alternative="food icon"/> 
+              <img src={food} width="100px" alt="food" className="food" />
+            </div>
 
+            {/* widget sleep quality */}
+            <div className="littleWidget">
+              <Card icone={sleepIcon} alternative="sleep icon" titre="Sleep Quality" />
+            </div>
+
+            {/* widget time in bed */}
+            <div className="littleWidget">
+              <Card icone={timeIcon} alternative="time icon" titre="Time in Bed" />
+              <p className="data">This night, you spent {time2Bed} hours in bed.</p>
+              <p>This week, you spent in average ... hours per night sleeping.</p>
+            </div>
+
+          </div>
+          
           {/* widget tips and motivation */}
           <div className="widget">
             <Card icone={tipsIcon} alternative="tips icon" titre="Tips and Motivation" />
@@ -78,14 +90,35 @@ export default function CenterFrame() {
               <p>{randomQuote?.quoteText && randomQuote.quoteText}</p>
             </div>
           </div>
-        </div>
-        <div className="bigWidget">
+
+          <div className="bigWidget">
             {/* widget activity growth */}
-          <div className="widget">
-            <Card icone={activityIcon} alternative="activity icon" titre="Activity Growth"/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div className="widget">
+              <Card icone={activityIcon} alternative="activity icon" titre="Activity Growth"/>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+            <div className="widget">
+              <div className="bigWidget">
+                <Card icone={dietIcon} alternative="diet icon" titre="Diet and Calories"/>
+                <div className="textLineWrapper">
+                  <LineText />
+                  <LineText />
+                  <LineText />
+                  <LineText />
+                </div>
+                <img src={manBody} alt="man body" className="manBody" />
+              </div>
+
+
+
+            </div>
           </div>
+
+          
+
         </div>
+        
         
       </div>
     );

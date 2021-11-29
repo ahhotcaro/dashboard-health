@@ -1,42 +1,72 @@
-.dashboard {
+/* -----------------------------------the biggest box -------------------------------*/
+
+.body {
     display: flex;
-    justify-content: space-around;
-    background-color: #E8E7E7;
+    background-color: #FFFFFF;
+}
+
+/*  -----------------------------------the two main boxes, aside  -----------------------------------*/
+
+.centerFrame {
+    background-color: cornflowerblue;
+    flex:2;
 }
 
 .nav{
-    background-color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 0 10px 10px 0;
+    width: 50px;
 }
+
+/*  ----------------------------------- head ----------------------------------- */
+
 .title {
-    background-color: #E8E7E7;
+    /* background-color: #962587; */
     display: flex;
     width: 100%;  
 }
+
 .header {
     display: flex;
+    justify-content: flex-start;
 }
+
+/*  ----------------------------------- NavBar ----------------------------------- */
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+/*  ----------------------------------- title and icone of every frame ----------------------------------- */
 
 .card {
     display: flex;
     justify-content: space-around;
+    padding: 1rem;
+    background-color: darkgoldenrod;
 }
+
+/*  ----------------------------------- organization of the frames ----------------------------------- */
 
 .widgets {
-    display: grid;
-    grid-template-areas: "a b" "c d";
-    flex-direction: column;
+    /* background-color: cadetblue; */
+
 }
 
-.widget {
-    background-color: #FFFFFF;
+.group1 {
+    display: flex;
+}
+
+.littleWidget {
+    background-color: #c3d146;
     padding: 2rem;
     margin: 2rem;
     border-radius: 10px;
+    min-height: 50px;
+    max-height: 200px;
 }
 
-.rightFrame{
-    background-color: #272927;
-    width: 40%;
-    border-radius: 10px 0 0 10px;
-}

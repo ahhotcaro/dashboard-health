@@ -10,17 +10,26 @@ import menuIcon6 from "../assets/menuIcon6.jpg";
 import glass1 from "../assets/glass1.jpg";
 import logo from '../assets/logo.png'
 
+
+function Logo(props) {
+  return (
+    <div className="logos">
+        <img src={props.icone} width="50px" height="50px" alt={props.alternative}/>
+    </div>
+  );
+}
+
 export default function Navbar() {
   return (
     <div className="nav">
-      <Card icone={logo} alternative="logo" />
-      <Card icone={menuIcon1} alternative="dashboard icon"/>
-      <Card icone={menuIcon2} alternative="calendar icon"/>
-      <Card icone={menuIcon3} alternative="chat icon"/>
-      <Card icone={menuIcon4} alternative="stats icon"/>
-      <Card icone={menuIcon5} alternative="settings icon"/>
-      <Card icone={menuIcon6} alternative="log out icon"/>
-      <Card icone={glass1} alternative="research icon"/>
+      <Logo icone={logo} alternative="logo" />
+      <Logo icone={menuIcon1} alternative="dashboard icon"/>
+      <Logo icone={menuIcon2} alternative="calendar icon"/>
+      <Logo icone={menuIcon3} alternative="chat icon"/>
+      <Logo icone={menuIcon4} alternative="stats icon"/>
+      <Logo icone={menuIcon5} alternative="settings icon"/>
+      <Logo icone={menuIcon6} alternative="log out icon"/>
+      <Logo icone={glass1} alternative="research icon"/>
     </div>
   );
 }
