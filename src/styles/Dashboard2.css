@@ -1,0 +1,42 @@
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E8E7E7;
+}
+
+.nav{
+    background-color: #FFFFFF;
+    border-radius: 0 10px 10px 0;
+}
+.title {
+    background-color: #E8E7E7;
+    display: flex;
+    width: 100%;  
+}
+.header {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.widgets {
+    display: grid;
+    grid-template-areas: "a b" "c d";
+    flex-direction: column;
+}
+
+.widget {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.rightFrame{
+    background-color: #272927;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}

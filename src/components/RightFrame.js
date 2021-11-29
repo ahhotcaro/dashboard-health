@@ -1,22 +1,23 @@
 import dietIcon from "../assets/dietIcon.jpg";
 import manBody from "../assets/manBody.jpg";
-import BMIscale from "../assets/BMIscale.jpg";
+// import BMIscale from "../assets/BMIscale.jpg";
 
 // Components
 import LineText from "./LineText";
+import Card from "./Card";
 
 export default function RightFrame(props) {
   return (
     <div className="rightFrame">
-      <img src={dietIcon} alt="diet icon" className="dietIcon" />
-      <h2 className="dietTitle">Diet and Calories</h2>
+      <Card icone={dietIcon} alternative="diet icon" titre="Diet and Calories"/>
       <div className="textLineWrapper">
         <LineText />
         <LineText />
         <LineText />
         <LineText />
       </div>
-      <p className="meal">Your meal represents</p>
+      <img src={manBody} alt="man body" className="manBody" />
+      {/* <p className="meal">Your meal represents</p>
       <p className="kcal">Kilocalories</p>
       <div className="sectionLine">
         <h3 className="BMICalculator">BMI Calculator</h3>
@@ -32,8 +33,8 @@ export default function RightFrame(props) {
           <div className="healthState"></div>
           <img src={BMIscale} alt="BMI scale" className="BMIscale" />
         </div>
-        <img src={manBody} alt="man body" className="manBody" />
-      </div>
+        
+      </div> */}
     </div>
   );
 }
