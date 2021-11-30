@@ -2,35 +2,37 @@
 
 .body {
     display: flex;
-    background-color: #FFFFFF;
+    background-color: #E5E5E5;
 }
 
 /*  -----------------------------------the two main boxes, aside  -----------------------------------*/
 
 .centerFrame {
-    background-color: cornflowerblue;
-    flex:2;
+    background-color: #E5E5E5;
 }
 
 .nav{
-    height: 100%;
+    background-color: #FFFFFF;
+
     display: flex;
     flex-direction: column;
     border-radius: 0 10px 10px 0;
-    width: 50px;
+    
 }
 
 /*  ----------------------------------- head ----------------------------------- */
-
-.title {
-    /* background-color: #962587; */
+ 
+.header {
+    /* margin: 0.5rem; */
     display: flex;
-    width: 100%;  
+    justify-content: space-around;
 }
 
-.header {
-    display: flex;
-    justify-content: flex-start;
+.upRight {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 2rem;
 }
 
 /*  ----------------------------------- NavBar ----------------------------------- */
@@ -45,28 +47,96 @@
 
 .card {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    background-color: darkgoldenrod;
+    padding: 0.5rem;
+
+    /* font-style: italic; */
+    /* background-color: darkgoldenrod; */
+}
+
+.iconWidg {
+    padding: 0.5rem;
 }
 
 /*  ----------------------------------- organization of the frames ----------------------------------- */
 
 .widgets {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: (3,1fr); */
     /* background-color: cadetblue; */
-
+    padding: 2rem;
+    /* margin: 2rem; */
 }
+
+/* .left {
+    grid-column: 2;
+}
+.right {
+    grid-column:1;
+} */
 
 .group1 {
     display: flex;
 }
 
+.group2 {
+    display: flex;
+}
+
 .littleWidget {
-    background-color: #c3d146;
-    padding: 2rem;
-    margin: 2rem;
+    background-color: #FFFFFF;
+    /* padding: 2rem; */
+    margin: 0.5rem;
     border-radius: 10px;
-    min-height: 50px;
-    max-height: 200px;
+    width: 33.33%;
+}
+/* food suggestion */
+.food {
+    margin-left: 3rem;
+}
+.button {
+    margin-left: 3.5rem;
+    padding: 0.5rem;
+}
+
+/* contenu du widget time in bed */
+.data {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.dataPlus {
+    font-family: fantasy;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* includes tips and activity frames */
+.bigWidget {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1rem;
+    
+}
+
+.right {
+    /* background-color: darkorange; */
+    color: white;
+    border-radius: 10px;
+    background-color: #272927;
+    
+}
+
+.textLine {
+    display: flex;
+    padding: 1rem;
+}
+
+.inputLine {
+    background-color: rgba(144,140,140,0.9);
+}
+
+.calories {
+    
 }
 

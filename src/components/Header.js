@@ -13,21 +13,20 @@ const currentDate = new Intl.DateTimeFormat("en-US", {
 }).format(date);
 
 export default function Header() {
-    
+
     return (
         <div className="header">
             
             <div className="mainTitle">
                 <h1 className="title">{title}</h1>
-            <p className="date">{currentDate}</p>
+                <p className="date">{currentDate}</p>
             </div>
         
-            <div className="research">
-                <img src={glass} alt="glass" width="24px" height="24px" />
-                </div>
-                <div className="notifications">
-                <img src={bell} alt="bell" width="24px" height="24px" />
+            <div className="side">
+                <img class="upRight" src={glass} alt="glass" width="24px" height="24px" />
+                <img class="upRight" src={bell} alt="bell" width="24px" height="24px" />
             </div> 
+
         </div>
  
     ); 
