@@ -1,191 +1,231 @@
 /* -----------------------------------the biggest box -------------------------------*/
 
 .body {
-    display: flex;
-    background-color: #E5E5E5;
+  display: flex;
+  background-color: #e5e5e5;
+  
 }
 
 .middleScreen {
-    display: flex;
+  display: flex;
 }
 
 /*  -----------------------------------the three main boxes, aside  -----------------------------------*/
 
-.navbar{
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0 10px 10px 0;
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
 }
 
 .main {
-    background-color: #E5E5E5;
-    /* background-color: orange; */
+  background-color: #e5e5e5;
+  /* display: flex; */
+  /* order:1; */
+  /* background-color: orange; */
 }
 
 .rightFrame {
-    /* background-color: darkorange; */
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    color: #FFFFFF;
-    border-radius: 10px;
-    background-color: #272927;
+  /* background-color: darkorange; */
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #272927;
 }
 
 /*  ----------------------------------- head ----------------------------------- */
- 
+
 .header {
-    /* margin: 0.5rem; */
-    display: flex;
-    justify-content: space-around;
+  /* margin: 0.5rem; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .upRight {
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 2rem;
 }
 
 /*  ----------------------------------- NavBar ----------------------------------- */
 
 .logos {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  background-color: #ffffff;
 }
 
 /*  ----------------------------------- title and icone of every frame ----------------------------------- */
 
 .card {
-    display: flex;
-    padding: 0.5rem;
+  display: flex;
+  padding: 0.5rem;
 }
 
 .iconWidg {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 /*  ----------------------------------- organization of the frames ----------------------------------- */
 
 .widgets {
-    /* display: flex; */
-    padding: 0.5rem;
+  /* display: flex; */
+  padding: 0.5rem;
 }
 
 .group1 {
-    display: grid;
-    /* gap: 0.5rem; */
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
-    padding-bottom: 1rem;
+  display: grid;
+  /* gap: 0.5rem; */
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  padding-bottom: 1rem;
 }
 
 .littleWidget {
-    background-color: #FFFFFF;
-    /* padding: 0.5rem; */
-    margin: 0.5rem;
-    border-radius: 10px;
-    height: 100%;
+  background-color: #ffffff;
+  /* padding: 0.5rem; */
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 100%;
 }
 
-
 .food {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .button {
-    margin-left: 3.5rem;
-    padding: 0.5rem;
+  margin-left: 3.5rem;
+  padding: 0.5rem;
 }
 
 /* contenu du widget time in bed */
 .data {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* right frame */
 .textLine {
-    display: flex;
-    padding: 0.5rem;
+  display: flex;
+  padding: 0.5rem;
 }
 
 .inputLine {
-    background-color: rgba(144,140,140,0.9);
+  background-color: rgba(144, 140, 140, 0.9);
 }
 
 .unity {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
-
 
 /* --------------------------citation ------------------------------------*/
 
 blockquote {
-    min-height: 5em;
-    padding   : 1em 4em;
-    font      : 1em/150% sans-serif;
-    position  : relative;
-    background-color: #FFFFFF;
-  }
-  
-  blockquote::before,
-  blockquote::after {
-    position: absolute;
-    height  : 3rem;
-    font    : 6rem/100% Georgia, "Times New Roman", Times, serif;
-  }
-  
-  blockquote::before {
-    content: '“';
-    top    : 0.3rem;
-    left   : 0.9rem;
-  }
-  
-  blockquote::after {
-    content: '”';
-    bottom : 0.3rem;
-    right  : 0.8rem;
-  }
-  
-  blockquote:lang(fr)::before {
-    content: '«';
-    top    : -1.5rem;
-    left   : 0.5rem;
-  }
-  
-  blockquote:lang(fr)::after {
-    content: '»';
-    bottom : 2.6rem;
-    right  : 0.5rem
-  }
-  
-  blockquote i {
-    display   : block;
-    font-size : 0.8em;
-    margin-top: 1rem;
-    font-style: italic;
-    text-align: right;
-  }
-  
+  min-height: 5em;
+  padding: 1em 4em;
+  font: 1em/150% sans-serif;
+  position: relative;
+  background-color: #ffffff;
+}
 
- /* if we are on a tablet */
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  height: 3rem;
+  font: 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
 
- @media (max-width: 1160px) { 
-    .middleScreen {
+blockquote::before {
+  content: "“";
+  top: 0.3rem;
+  left: 0.9rem;
+}
+
+blockquote::after {
+  content: "”";
+  bottom: 0.3rem;
+  right: 0.8rem;
+}
+
+blockquote:lang(fr)::before {
+  content: "«";
+  top: -1.5rem;
+  left: 0.5rem;
+}
+
+blockquote:lang(fr)::after {
+  content: "»";
+  bottom: 2.6rem;
+  right: 0.5rem;
+}
+
+blockquote i {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: right;
+}
+
+/* if we are on a tablet */
+
+@media (max-width: 1160px) and (min-width: 575px) {
+  /* .middleScreen {
         display: grid;
-    }
-    .rightFrame {
+    } */
+  /* .rightFrame {
         display: flex;
-    }
-    .mosaique {
-        display: none;
-        /* grid-template-columns: repeat(2, minmax(240px, 1fr));
-        padding-bottom: 1rem; */
-    }
- }
+    } */
 
+  .mosaique {
+    display: flex;
 
+    padding-bottom: 1rem;
+  }
+  /*.group1 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
+    } */
+}
+
+@media (max-width: 575px) {
+  .body {
+    flex-direction: column;
+  }
+  .navbar {
+    order: 1;
+    flex-direction: row;
+    position: sticky;
+    bottom: 0px;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+  }
+  .metaLogo {
+    display: none;
+  }
+  .logos {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0;
+  }
+  .middleScreen {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .group1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputLine {
+      max-width: 90px;
+  }
+}
