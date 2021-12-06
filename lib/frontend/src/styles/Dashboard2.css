@@ -88,26 +88,38 @@
 
 .littleWidget {
   background-color: #ffffff;
-  /* padding: 0.5rem; */
   margin: 0.5rem;
   border-radius: 10px;
   height: 100%;
 }
 
 .food {
-  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} 
+.clickBut {
+  padding: 0.5rem;
 }
 
 .button {
-  margin-left: 3.5rem;
-  padding: 0.5rem;
+display: flex;
 }
 
 /* contenu du widget time in bed */
 .data {
   margin-left: 1rem;
   margin-right: 1rem;
+  
 }
+.impData {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* right frame */
 .textLine {
@@ -196,6 +208,12 @@ blockquote i {
 @media (max-width: 575px) {
   .body {
     flex-direction: column;
+  }
+  .mainTitle {
+    padding-left: 1rem;
+  }
+  .side {
+    display: none;
   }
   .navbar {
     order: 1;
