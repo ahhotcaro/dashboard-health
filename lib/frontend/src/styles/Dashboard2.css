@@ -3,7 +3,6 @@
 .body {
   display: flex;
   background-color: #e5e5e5;
-  
 }
 
 .middleScreen {
@@ -47,7 +46,7 @@
   background-color: #ffffff;
   border-radius: 5px;
   padding: 0.5rem;
-  margin: 2rem;
+  margin: 2rem 1rem 2rem 1rem;
 }
 
 /*  ----------------------------------- NavBar ----------------------------------- */
@@ -99,27 +98,31 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-} 
+}
 .clickBut {
   padding: 0.5rem;
 }
 
 .button {
-display: flex;
+  display: flex;
 }
 
 /* contenu du widget time in bed */
 .data {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 .impData {
   font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
   display: flex;
   justify-content: center;
+  margin: 0.5rem;
 }
 
+.imageFood {
+  border-radius: 10px;
+}
 
 /* right frame */
 .textLine {
@@ -133,6 +136,10 @@ display: flex;
 
 .unity {
   padding-left: 1rem;
+}
+
+.chart {
+  padding: 1rem;
 }
 
 /* --------------------------citation ------------------------------------*/
@@ -244,6 +251,6 @@ blockquote i {
     flex-direction: column;
   }
   .inputLine {
-      max-width: 90px;
+    max-width: 90px;
   }
 }

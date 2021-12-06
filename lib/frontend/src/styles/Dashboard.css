@@ -18,13 +18,14 @@
   flex-direction: column;
   justify-content: space-around;
 
-  background: #FF5733;
+  background: #ff5733;
   border: 1px solid #e8e7e7;
   box-sizing: border-box;
   box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 1px 50px rgba(192, 137, 34, 0.308); */
+
   border-radius: 40px 12px 12px 40px;
 }
-
 
 /* ********************************************* Center Frame ****************************************** */
 
