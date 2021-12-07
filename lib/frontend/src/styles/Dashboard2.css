@@ -20,11 +20,9 @@
 
 .main {
   background-color: #e5e5e5;
-
 }
 
 .rightFrame {
-
   color: #ffffff;
   border-radius: 10px;
   background-color: #303030;
@@ -79,10 +77,10 @@
 
 .group1 {
   display: grid;
-  gap: 0.5rem; 
-  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-bottom: 0.5rem;
-} 
+}
 
 .littleWidget {
   background-color: #ffffff;
@@ -104,7 +102,7 @@
 }
 
 .tips {
-  grid-column : 1 / 4;
+  grid-column: 1 / 4;
 }
 
 /* contenu du widget time in bed */
@@ -113,7 +111,16 @@
 }
 .impData {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 120%;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.impData2 {
+  font-weight: bold;
+  font-size: 200%;
   line-height: 35px;
   display: flex;
   justify-content: center;
@@ -206,12 +213,11 @@ blockquote i {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
     gap: 0.5rem;
-   
   }
   blockquote {
     padding: 0.5rem;
   }
-  
+
   blockquote::before,
   blockquote::after {
     display: none;
@@ -220,7 +226,7 @@ blockquote i {
     display: none;
   }
   .tips {
-    grid-column : 1 fr;
+    grid-column: 1 fr;
   }
 
   .mansBody {
@@ -253,13 +259,12 @@ blockquote i {
     bottom: 0px;
     z-index: 1;
     border-radius: 10px 10px 0 0;
-    
-  } 
+  }
 
   .metaLogo {
     display: none;
   }
-  
+
   .logos {
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
