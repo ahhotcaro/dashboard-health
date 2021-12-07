@@ -259,6 +259,11 @@ td {
   margin: 0.5rem;
 }
 
+.button1:hover,
+button1:focus {
+  cursor: pointer;
+}
+
 form {
   margin: 20px 0 50px 0;
 }
