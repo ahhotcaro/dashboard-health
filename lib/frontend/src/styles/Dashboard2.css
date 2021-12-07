@@ -151,6 +151,7 @@
 .mansBody {
   padding-top: 2rem;
   height: 500px;
+  padding-bottom: 1rem;
 }
 /* --------------------------citation ------------------------------------*/
 
@@ -259,6 +260,7 @@ blockquote i {
     bottom: 0px;
     z-index: 1;
     border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 0.3em rgb(51, 49, 49);
   }
 
   .metaLogo {
