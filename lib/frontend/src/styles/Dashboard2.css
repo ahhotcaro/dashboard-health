@@ -20,24 +20,17 @@
 
 .main {
   background-color: #e5e5e5;
-  /* display: flex; */
-  /* order:1; */
-  /* background-color: orange; */
 }
 
 .rightFrame {
-  /* background-color: darkorange; */
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
   color: #ffffff;
   border-radius: 10px;
-  background-color: #272927;
+  background-color: #303030;
 }
 
 /*  ----------------------------------- head ----------------------------------- */
 
 .header {
-  /* margin: 0.5rem; */
   display: flex;
   justify-content: space-around;
 }
@@ -82,12 +75,11 @@
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .littleWidget {
   background-color: #ffffff;
-  margin: 0.5rem;
   border-radius: 10px;
   height: 100%;
 }
@@ -103,10 +95,6 @@
 }
 .clickBut {
   padding: 0.5rem;
-}
-
-.button {
-  display: flex;
 }
 
 .tips {
@@ -156,7 +144,10 @@
 .chart {
   padding: 1rem;
 }
-
+.mansBody {
+  padding-top: 2rem;
+  height: 500px;
+}
 /* --------------------------citation ------------------------------------*/
 
 blockquote {
@@ -233,8 +224,19 @@ blockquote i {
   .tips {
     grid-column: 1 fr;
   }
-}
 
+  .mansBody {
+    display: none;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+  .mealGrams {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* ------------------------------ on phone -----------------------------*/
 @media (max-width: 650px) {
   .body {
@@ -246,6 +248,9 @@ blockquote i {
   .side {
     display: none;
   }
+  .imageFood {
+    margin-bottom: 1rem;
+  }
   .navbar {
     order: 1;
     flex-direction: row;
@@ -254,12 +259,14 @@ blockquote i {
     z-index: 1;
     border-radius: 10px 10px 0 0;
   }
+
   .metaLogo {
     display: none;
   }
+
   .logos {
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
     padding-right: 0;
   }
   .middleScreen {
@@ -276,5 +283,12 @@ blockquote i {
   }
   .inputLine {
     max-width: 90px;
+  }
+  .mansBody {
+    display: none;
+  }
+  .mealGrams {
+    display: flex;
+    justify-content: center;
   }
 }
