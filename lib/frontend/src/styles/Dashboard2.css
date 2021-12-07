@@ -73,6 +73,10 @@
   padding: 0.5rem;
 }
 
+.imageFood {
+  margin-bottom: 1rem;
+}
+
 .group1 {
   display: grid;
   gap: 0.5rem; 
@@ -241,9 +245,6 @@ blockquote i {
   }
   .side {
     display: none;
-  }
-  .imageFood {
-    margin-bottom: 1rem;
   }
   .navbar {
     order: 1;
