@@ -1,4 +1,7 @@
 /* -----------------------------------the biggest box -------------------------------*/
+body {
+  background-color: #e5e5e5;
+}
 
 .body {
   display: flex;
@@ -15,7 +18,7 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 12px 12px 0;
 }
 
 .main {
@@ -23,8 +26,16 @@
 }
 
 .rightFrame {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px 0 0 30px;
   background-color: #303030;
 }
 
@@ -77,9 +88,14 @@
 
 .group1 {
   display: grid;
-  gap: 0.5rem;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 0.5rem;
+  padding: 2rem;
+}
+
+.group2 {
+  padding: 2rem;
+  padding-top: 0;
 }
 
 .littleWidget {
@@ -97,6 +113,16 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.food1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .clickBut {
   padding: 0.5rem;
 }
@@ -202,6 +228,41 @@ blockquote i {
   text-align: right;
 }
 
+/* --------------------------------- admin page --------------------------- */
+.arrayANDform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin: 10px 50px 10px 50px;
+}
+
+table {
+  border: 2px solid #333;
+  width: 100%;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  border: 1px solid;
+  border-color: #333;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+form {
+  margin: 20px 0 50px 0;
+}
+
 /* ----------------------------- on tablet ----------------------------- */
 
 @media (max-width: 1100px) and (min-width: 650px) {
@@ -209,6 +270,12 @@ blockquote i {
     display: flex;
     flex-direction: column;
   }
+  .rightFrame {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 30px 30px 0 0;
+  }
+
   .group1 {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -230,9 +297,9 @@ blockquote i {
     grid-column: 1 fr;
   }
 
-  .mansBody {
+  /* .mansBody {
     display: none;
-  }
+  } */
   .card {
     display: flex;
     justify-content: center;
@@ -247,11 +314,17 @@ blockquote i {
   .body {
     flex-direction: column;
   }
+  .rightFrame {
+    border-radius: 30px 30px 0 0;
+  }
   .mainTitle {
     padding-left: 1rem;
   }
   .side {
     display: none;
+  }
+  tbody {
+    width: 10rem;
   }
   .navbar {
     order: 1;
@@ -294,13 +367,6 @@ blockquote i {
     display: flex;
     justify-content: center;
   }
-}
-
-table,
-td {
-  display: absolute;
-  border: 1px solid #333;
-  height: 100px;
 }
 
 thead,
