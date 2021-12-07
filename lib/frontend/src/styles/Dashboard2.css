@@ -285,7 +285,7 @@ form {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
-    gap: 0.5rem;
+    gap: 2rem;
   }
   blockquote {
     padding: 0.5rem;
